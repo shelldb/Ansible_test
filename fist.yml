@@ -1,0 +1,7 @@
+- hosts: appserver
+  user: ansiblemaster
+  connection: ssh
+  sudo: no
+  gather_facts: no
+  tasks:
+   - script: /home/ansiblemaster/Ansible_test/uptime.sh > uptime.log
