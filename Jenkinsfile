@@ -3,8 +3,8 @@ pipeline{
           stages{
            stage('build'){
             steps {
-            sh 'chmod u+x first.yml'
-            sh 'ansible-playbook first.yml'
+            sh 'chmod u+x master.sh'
+            sh './master.sh'
           }
       }
      }
